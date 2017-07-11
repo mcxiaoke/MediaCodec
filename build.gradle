@@ -1,0 +1,19 @@
+ext {
+    compileSdkVersion = 25
+    buildToolsVersion = "25.0.3"
+    minSdkVersion = 18
+    targetSdkVersion = 22
+}
+
+buildscript {
+
+    repositories {
+        maven { url '/tmp/repo/' }
+        jcenter()
+        maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
+    }
+
+    dependencies {
+        classpath "com.android.tools.build:gradle:2.2.3"
+    }
+}
